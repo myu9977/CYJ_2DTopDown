@@ -9,11 +9,10 @@ public class NameTagController : MonoBehaviour
 
     public Text nameText;
 
-    internal void SetPlayerName(string playerName)
+    private void Start()
     {
-        nameText.text = playerName;
+        nameText.text = GameManager.instance.playerName;
     }
-
 
     void Update()
     {
